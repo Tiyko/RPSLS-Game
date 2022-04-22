@@ -20,8 +20,15 @@
       "**/core.python*": true,
       "**/CVS": true
    },
-   "files.autoSave": "off",
-   "workbench.colorTheme": "Visual Studio Dark",
+   "files.autoSave": "onWindowChange",
+   "workbench.colorTheme": "Community Material Theme Darker High Contrast",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "editor.fontSize": 13,
+   "editor.wordWrap": "on",
+   "editor.accessibilityPageSize": 15,
+   "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+   "workbench.editor.enablePreview": false,
+   "workbench.list.openMode": "doubleClick",
+   "editor.rename.enablePreview": false
 }
