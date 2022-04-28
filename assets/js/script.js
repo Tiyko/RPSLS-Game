@@ -47,6 +47,10 @@ function runGame(user) {
     let comPick = document.getElementById('challenger-two');
     comPick.innerText = choices[com];
 
+    // called function to display to change background colors
+    challengerColors(userPick);
+    challengerColors(comPick);
+
     // called function to display the score
     gameScore(gameResult);
 }
@@ -95,6 +99,23 @@ function gameScore(gameResult) {
  */
 function challengerColors(userPick) {
 
+    switch (userPick.innerHTML) {
+        case 'Rock':
+            userPick.style.backgroundColor = 'palevioletred';
+            break;
+        case 'Paper':
+            userPick.style.backgroundColor = 'sandybrown';
+            break;
+        case 'Scissors':
+            userPick.style.backgroundColor = 'purple';
+            break;
+        case 'Lizard':
+            userPick.style.backgroundColor = 'mediumseagreen';
+            break;
+        case 'Spock':
+            userPick.style.backgroundColor = 'blue';
+            break;
+    }
 }
 
 /**
