@@ -174,4 +174,6 @@ function gameOver(oldscore) {
  */
 function playAgain() {
 
+    let playAgain = document.getElementById('game-over');
+    playAgain.style.visibility = "hidden";
 }
