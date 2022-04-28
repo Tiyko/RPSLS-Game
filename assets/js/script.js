@@ -72,6 +72,8 @@ function gameScore(gameResult) {
         let wins = [...document.querySelectorAll("#versus, #user-wins")];
         wins.map(element => element.style.backgroundColor = 'green');
 
+        // function that resets the score counting to 0
+        gameOver(oldscore);
     } else if (gameResult === 'LOST') {
 
         // increases computer wins score by one to ID com-wins
@@ -82,6 +84,8 @@ function gameScore(gameResult) {
         let loss = [...document.querySelectorAll("#versus, #com-wins")];
         loss.map(element => element.style.backgroundColor = 'red');
 
+        // function that resets the score counting to 0
+        gameOver(oldscore);
     } else {
         // increases ties score by one to ID ties
         let oldscore = parseInt(document.getElementById("ties").innerText);
@@ -90,6 +94,9 @@ function gameScore(gameResult) {
         // variable that changes background color
         let ties = [...document.querySelectorAll("#versus, #ties")];
         ties.map(element => element.style.backgroundColor = 'rosybrown');
+
+        // function that resets the score counting to 0
+        gameOver(oldscore);
     }
 
 }
@@ -130,6 +137,16 @@ function endGameMessage(result) {
  */
 function gameOver(oldscore) {
 
+    if (oldscore === 10) {
+
+        // when the score reaches to 10 it will reset from 0
+        let resetscore = [...document.querySelectorAll("#user-wins, #com-wins, #ties")];
+        resetscore.map(element => element.innerText = 0);
+
+        // displays the end game element
+        let endGame = document.getElementById('game-over');
+        endGame.style.visibility = "visible";
+    }
 }
 
 /**
