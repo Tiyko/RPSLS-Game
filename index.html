@@ -8,30 +8,52 @@
     <title>RPSLS - Game</title>
 </head>
 <body>
-     <h1>Rock, Paper, Scissors, Lizard, Spock - Game</h1>
+    <h1>Rock, Paper, Scissors, Lizard, Spock - Game</h1>
 
-     <!-- Circles container -->
-     <div class="circles-container">
+    <!-- Circles container -->
+    <div class="circles-container">
 
-         <!-- Game buttons -->
-         <button class="circle1 circles" onclick="runGame(0)"></button>
-         <button class="circle2 circles" onclick="runGame(1)"></button>
-         <button class="circle3 circles" onclick="runGame(2)"></button>
-         <button class="circle4 circles" onclick="runGame(3)"></button>
-         <button class="circle5 circles" onclick="runGame(4)"></button>
+        <!-- Game buttons -->
+        <button class="circle1 circles" onclick="runGame(0)"></button>
+        <button class="circle2 circles" onclick="runGame(1)"></button>
+        <button class="circle3 circles" onclick="runGame(2)"></button>
+        <button class="circle4 circles" onclick="runGame(3)"></button>
+        <button class="circle5 circles" onclick="runGame(4)"></button>
 
-         <!-- Game information container -->
-         <div class="circle6 circles">
+        <!-- Game information container -->
+        <div class="circle6 circles">
+            <!-- Game rules tooltip -->
+            <div class="tooltip">
+                <i class="gg-info tooltip-icon"></i>
 
-         </div>
+                <span class="tooltip-content">
+                    <h2 class="game-rules-title">GAME RULES</h2>
+                    <h3 class="game-rules-title">To win the game reach 10 wins!</h3>
+                    <img src="/assets/images/tooltip.webp" alt="Rock, Paper, Scissors, Lizard, Spock - Game Rules">
+                </span>
+            </div>
 
-         <!-- Game outcome container -->
-         <div class="circle7 circles" id="game-over">
+            <span class="tooltip-text">Click buttons to play</span>
+            <h2 id="challenge">Challengers</h2>
+            <div class="challengers">
+                <p class="challenger-one" id="challenger-one">...</p>
+                <p class="versus" id="versus">vs</p>
+                <p class="challenger-two" id="challenger-two">...</p>
+            </div>
 
-         </div>
+            <p>User Wins: <span class="score" id="user-wins">0</span></p>
+            <p>Ties: <span class="score" id="ties">0</span></p>
+            <p>COM Wins: <span class="score" id="com-wins">0</span></p>
+        </div>
 
-     </div>
+        <!-- Game outcome container -->
+        <div class="circle7 circles" id="game-over">
 
+        </div>
+
+    </div>
+
+    <!-- Game script -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
