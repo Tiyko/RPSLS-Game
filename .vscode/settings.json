@@ -29,6 +29,6 @@
    "editor.accessibilityPageSize": 15,
    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
    "workbench.editor.enablePreview": false,
-   "workbench.list.openMode": "doubleClick",
+   "workbench.list.openMode": "singleClick",
    "editor.rename.enablePreview": false
 }
