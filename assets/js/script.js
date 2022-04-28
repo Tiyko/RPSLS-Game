@@ -60,6 +60,8 @@ function runGame(user) {
  */
 function gameScore(gameResult) {
 
+    // end game message variable
+    let result = '';
     // else if statements that compares the stored result in the runGame function
     // and displays the result to the DOM
     if (gameResult === 'WON') {
@@ -71,6 +73,8 @@ function gameScore(gameResult) {
         // variable that changes background color
         let wins = [...document.querySelectorAll("#versus, #user-wins")];
         wins.map(element => element.style.backgroundColor = 'green');
+
+        result = 'WON';
 
         // function that resets the score counting to 0
         gameOver(oldscore);
@@ -84,6 +88,8 @@ function gameScore(gameResult) {
         let loss = [...document.querySelectorAll("#versus, #com-wins")];
         loss.map(element => element.style.backgroundColor = 'red');
 
+        result = 'LOST';
+
         // function that resets the score counting to 0
         gameOver(oldscore);
     } else {
@@ -95,10 +101,14 @@ function gameScore(gameResult) {
         let ties = [...document.querySelectorAll("#versus, #ties")];
         ties.map(element => element.style.backgroundColor = 'rosybrown');
 
+        result = 'TIE';
+
         // function that resets the score counting to 0
         gameOver(oldscore);
     }
 
+    // function called for end game message
+    endGameMessage(result);
 }
 
 /**
@@ -130,6 +140,16 @@ function challengerColors(userPick) {
  */
 function endGameMessage(result) {
 
+    if (result === 'WON') {
+        let endGameText = document.getElementById('game-over-note');
+        endGameText.innerText = 'CONGRATULATION YOU WIN!';
+    } else if (result === 'LOST') {
+        let endGameText = document.getElementById('game-over-note');
+        endGameText.innerText = 'SORRY YOU LOST!';
+    } else {
+        let endGameText = document.getElementById('game-over-note');
+        endGameText.innerText = 'IT WAS A TIE!';
+    }
 }
 
 /**
