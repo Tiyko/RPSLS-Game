@@ -8,6 +8,7 @@ Global Settings
     padding: 0;
     box-sizing: border-box;
     font-size: 0.99rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -35,8 +36,9 @@ h2 {
     margin: 2% 0;
 }
 
+h2,
 p {
-    font-weight: 550;
+    font-weight: 600;
 }
 
 /*

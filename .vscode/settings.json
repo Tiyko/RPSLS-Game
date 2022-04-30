@@ -20,7 +20,7 @@
       "**/core.python*": true,
       "**/CVS": true
    },
-   "files.autoSave": "onWindowChange",
+   "files.autoSave": "onFocusChange",
    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
