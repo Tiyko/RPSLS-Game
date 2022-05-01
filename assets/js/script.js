@@ -14,10 +14,19 @@ let conclusion = [
 // variable that stores the initial result text, to be added to the result when game is played.
 let originalVersusText = document.getElementById('versus').innerText;
 
+// variable that checks the state of the game
+let inProgress = true;
+
 /**
- * Function that runs the game
+ * // Function that runs the game
+ * @param {Int} user
  */
 function runGame(user) {
+
+    // statement that stops the game from running if the game finished
+    if (inProgress === false) {
+        return;
+    }
 
     // variable that calculates a random number up to 5 to represent the computer's choice
     let com = Math.floor(Math.random() * 5);
@@ -56,7 +65,8 @@ function runGame(user) {
 }
 
 /**
- * function that keeps track of score
+ * // function that keeps track of score
+ * @param {*} gameResult 
  */
 function gameScore(gameResult) {
 
@@ -72,7 +82,7 @@ function gameScore(gameResult) {
 
         // variable that changes background color
         let wins = [...document.querySelectorAll("#versus, #user-wins")];
-        wins.map(element => element.style.backgroundColor = 'green');
+        wins.forEach((element) => element.style.backgroundColor = 'green');
 
         result = 'WON';
 
@@ -86,7 +96,7 @@ function gameScore(gameResult) {
 
         // variable that changes background color
         let loss = [...document.querySelectorAll("#versus, #com-wins")];
-        loss.map(element => element.style.backgroundColor = 'red');
+        loss.forEach((element) => element.style.backgroundColor = 'red');
 
         result = 'LOST';
 
@@ -99,7 +109,7 @@ function gameScore(gameResult) {
 
         // variable that changes background color
         let ties = [...document.querySelectorAll("#versus, #ties")];
-        ties.map(element => element.style.backgroundColor = 'rosybrown');
+        ties.forEach((element) => element.style.backgroundColor = 'rosybrown');
 
         result = 'TIE';
 
@@ -112,7 +122,8 @@ function gameScore(gameResult) {
 }
 
 /**
- * switch function that changes game challengers background color
+ * // switch function that changes game challengers background color
+ * @param {*} userPick 
  */
 function challengerColors(userPick) {
 
@@ -153,7 +164,8 @@ function endGameMessage(result) {
 }
 
 /**
- * function that resets the score at 10 
+ * // function that resets the score at 10 
+ * @param {Int} oldscore 
  */
 function gameOver(oldscore) {
 
@@ -161,11 +173,13 @@ function gameOver(oldscore) {
 
         // when the score reaches to 10 it will reset from 0
         let resetscore = [...document.querySelectorAll("#user-wins, #com-wins, #ties")];
-        resetscore.map(element => element.innerText = 0);
+        resetscore.forEach((element) => element.innerText = 0);
 
         // displays the end game element
         let endGame = document.getElementById('game-over');
         endGame.style.visibility = "visible";
+
+        inProgress = false;
     }
 }
 
@@ -176,4 +190,6 @@ function playAgain() {
 
     let playAgain = document.getElementById('game-over');
     playAgain.style.visibility = "hidden";
+
+    inProgress = true;
 }
