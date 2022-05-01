@@ -59,7 +59,7 @@ To follow a pattern and make my life easier before I engaged in creating the web
 #### **How to play**
 
 * There are 5 characters of choice: Rock, Paper, Scissors, Lizard, Spock.
-* Each of them defeats 2 characters and lose to the other 2:
+* Each of them defeats 2 characters and loses to the other 2:
   * Rock defeats Scissors and Lizard.
   * Paper defeats Rock and Spock.
   * Scissors defeats Paper and Lizard.
@@ -110,8 +110,12 @@ To follow a pattern and make my life easier before I engaged in creating the web
 
 * **Tooltip icon** ![Tooltip Icon](docs/screenshots/tooltip_icon.jpg) containing the game's rules:
   * When the user is mouse hovering over the information icon a pop-up with game rules will be displayed.
+
+* **Game Rules**
   * The game rules contain a picture showing the game outcome for every character.
   * The game will finish when the user or the computer reaches 10 wins and it can even end in a tie.
+
+![Game Rules](docs/screenshots/game_rules.jpg)
 
 * **Call to action** ![Call to action](docs/screenshots/call_to_action.jpg) paragraph asking the user to take action and press the buttons to play the game.
 
@@ -133,3 +137,15 @@ To follow a pattern and make my life easier before I engaged in creating the web
   * Also a button is shown to let the user play the game again.
 
 ![Gameover container](docs/screenshots/gameover_container.jpg)
+
+## **Deployment**
+
+To deploy the website on GitHub pages, I used the following procedure:
+
+1. From inside the website's repository I clicked the last tab, "Settings".
+1. In the "Settings" tab to the left-hand side a menu with the title "General" can be found. Here in the second group "Code and automation" I clicked the last option, "Pages".
+1. Inside "GitHub Pages" and right under it there is a section with the title "Source" with 3 options:
+    * Select Branch: main
+    * Select Folder: /(root)
+    * Click save: your website will be deployed.
+
