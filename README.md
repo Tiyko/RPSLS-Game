@@ -167,13 +167,13 @@ To follow a pattern and make my life easier before I engaged in creating the web
 * **Challengers containers: ![Challengers container](docs/screenshots/challengers.jpg)**
   * The title of the challengers ![Challengers title](docs/screenshots/challengers_title.jpg)
   * First, the challengers' area appears with 3 dots versus 3 dots.
-  * As the user is clicking buttons and playing the game the name of the chosen characters will be displayed.
-  * Every character appears with a background color matching their button color. ![Challengers Playing](docs/screenshots/challengers_playing.jpg)
-  * The outcome of the challenge is displayed between the characters' names in green for the user, red for the computer, and pale brown for a tie.
+  * As the user is clicking buttons and playing the game the name of the chosen characters will be displayed. ![Challengers Playing](docs/screenshots/challengers_playing.jpg)
+  * Every character appears with a background color matching their button color. ![Rock](docs/screenshots/rock.jpg)![Paper](docs/screenshots/paper.jpg)![Scissors](docs/screenshots/scissors.jpg)![Lizard](docs/screenshots/lizard.jpg)![Spock](docs/screenshots/spock.jpg)
+  * The outcome of the challenge is displayed between the characters' names in green for the user, red for the computer, and pale brown for a tie. ![Win](docs/screenshots/won.jpg)![Tie](docs/screenshots/tie.jpg)![Loss](docs/screenshots/lost.jpg)
 
 * **Scoring system:** ![Scoring](docs/screenshots/scoring.jpg)
   * Under the challengers containers the scoring system, is presented, displaying the number of wins for the user and computer and as well the number of ties.
-  * The scoring number background colors match the game's outcome in green for the user, red for the computer, and pale brown for a tie. ![Win](docs/screenshots/won.jpg)![Tie](docs/screenshots/tie.jpg)![Loss](docs/screenshots/lost.jpg)
+  * The scoring number background colors match the game's outcome in green for the user, red for the computer, and pale brown for a tie. ![Win](docs/screenshots/user_wins.jpg)![Tie](docs/screenshots/ties.jpg)![Loss](docs/screenshots/com_wins.jpg)
 
 #### **Gameover container**
 
