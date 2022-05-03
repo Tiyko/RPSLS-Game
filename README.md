@@ -10,6 +10,39 @@ A simple Rock, Paper, Scissors, Lizard, Spock game that is meant to entertain pe
 
 ## **Index**
 
+1. [**Game Intro**](#game-intro)
+1. [**UX Design**](#ux-design)
+    * [**Using The Strategy and the Scope Plane**](#using-the-strategy-and-the-scope-plane)
+      * [**Target audience**](#target-audience)
+    * [**Using The Structure Plane**](#using-the-structure-plane)
+      * [**User Stories**](#user-stories)
+      * [**Website Goals**](#website-goals)
+1. [**UI Design**](#ui-design)
+    * [**Wireframes**](#wireframes)
+    * [**Features**](#features)
+      * [**How to play**](#how-to-play)
+      * [**Game matrix**](#game-matrix)
+      * [**Colors**](#colors)
+      * [**Title**](#title)
+      * [**Game container**](#game-container)
+      * [**Buttons**](#buttons)
+      * [**Game information container**](#game-information-container)
+      * [**Gameover container**](#gameover-container)
+1. [**Deployment**](#deployment)
+1. [**Testing and Debugging**](#testing-and-debugging)
+    * [**Testing**](#testing)
+    * [**Debugging**](#debugging)
+1. [**Post developement testing**](#post-developement-testing)
+    * [**HTML Validation**](#html-validation)
+    * [**CSS Validation**](#css-validation)
+    * [**Contrast Validation**](#contrast-validation)
+    * [**Performance**](#performance)
+      * [***Desktop Lighthouse scores***](#desktop-lighthouse-scores)
+      * [***Mobile Phones Lighthouse scores***](#mobile-phones-lighthouse-scores)
+1. [**Credits**](#credits)
+    * [**General reference:**](#general-reference)
+    * [**Content and Media**](#content-and-media)
+
 ## **UX Design**
 
 * *The UXD was made taking into consideration "The Five plans"*
@@ -38,6 +71,8 @@ A simple Rock, Paper, Scissors, Lizard, Spock game that is meant to entertain pe
 * The site’s users want to play an online game that has a score tracking system.
 * The site’s users want to play an online game against the computer.
 
+[***Back to Index***](#index)
+
 ## **UI Design**
 
 * *Taking into consideration the "Five Planes" I have used the "Skeleton Plane" and the "Surface Plane" to make the UI design.**
@@ -50,9 +85,13 @@ To follow a pattern and make my life easier before I engaged in creating the web
 
 ![Desktop diagram](docs/wireframes/desktop-wireframes.jpg)
 
+[***Back to Index***](#index)
+
 * Mobile wireframes:
 
 ![Mobile diagram](docs/wireframes/mobile-wireframes.jpg)
+
+[***Back to Index***](#index)
 
 ### **Features**
 
@@ -65,6 +104,8 @@ To follow a pattern and make my life easier before I engaged in creating the web
   * Scissors defeats Paper and Lizard.
   * Lizard defeats Paper and Spock.
   * Spock defeats Rock and Scissors.
+
+[***Back to Index***](#index)
 
 #### **Game matrix**
 
@@ -83,12 +124,16 @@ To follow a pattern and make my life easier before I engaged in creating the web
 * Since only the game is displayed on the entire page, the game title is large on the middle top of the screen.
 ![Page Title](docs/screenshots/title_screenshot.jpg)
 
+[***Back to Index***](#index)
+
 #### **Game container**
 
 * The game container is the largest circle and contains the game's outcome elements.
 * The game container has a shadow leaning to the right to give an illusion as if the light was coming from the left side of the screen.
 
 ![Game Container](docs/screenshots/game_container.jpg)
+
+[***Back to Index***](#index)
 
 #### **Buttons**
 
@@ -138,6 +183,8 @@ To follow a pattern and make my life easier before I engaged in creating the web
 
 ![Gameover container](docs/screenshots/gameover_container.jpg)
 
+[***Back to Index***](#index)
+
 ## **Deployment**
 
 To deploy the website on GitHub pages, I used the following procedure:
@@ -148,6 +195,8 @@ To deploy the website on GitHub pages, I used the following procedure:
     * Select Branch: main
     * Select Folder: /(root)
     * Click save: your website will be deployed.
+
+[***Back to Index***](#index)
 
 ## **Testing and Debugging**
 
@@ -169,6 +218,8 @@ To deploy the website on GitHub pages, I used the following procedure:
   * After reaching the end of the game and the final message would be displayed, if the user continued to press character buttons the game would still be running and recording the score in the background of the final message.
 * Solution found:
   * Created a new variable called inProgress in the JavaScript file and called it in the game's function and as well in the game's final message.
+
+[***Back to Index***](#index)
 
 ## **Post developement testing**
 
@@ -200,6 +251,8 @@ To deploy the website on GitHub pages, I used the following procedure:
 
 ![Mobile Lighthouse score](docs/screenshots/mobile_performace.jpg)
 
+[***Back to Index***](#index)
+
 ## **Credits**
 
 * Thanks to the people that helped me when I got stuck during the development of the project:
@@ -216,3 +269,5 @@ To deploy the website on GitHub pages, I used the following procedure:
 * Font linked from [Google Fonts](https://fonts.google.com/).
 * The tooltip picture was taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
   * [Rock, Paper, Scissors, Lizard, Spock](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg/768px-Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg.png)
+
+[***Back to Index***](#index)
