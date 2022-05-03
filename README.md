@@ -149,3 +149,70 @@ To deploy the website on GitHub pages, I used the following procedure:
     * Select Folder: /(root)
     * Click save: your website will be deployed.
 
+## **Testing and Debugging**
+
+### **Testing**
+
+* After I published the game on the GitHub Pages I continuously checked the game's behavior and responsiveness to multiple devices.
+* In addition, have asked friends with Apple devices to check the game and its responsiveness.
+* I used to test the website on the following web browsers:
+  * Brave,
+  * Chrome,
+  * Firefox,
+  * Opera,
+  * Safari,
+  * Edge.
+
+### **Debugging**
+
+* Issue: Game still running after the game is over
+  * After reaching the end of the game and the final message would be displayed, if the user continued to press character buttons the game would still be running and recording the score in the background of the final message.
+* Solution found:
+  * Created a new variable called inProgress in the JavaScript file and called it in the game's function and as well in the game's final message.
+
+## **Post developement testing**
+
+### **HTML Validation**
+
+* To test my HTML code I used [W3C HTML Validator](https://validator.w3.org/nu/) and one error was returned:
+  * Button elements cannot contain paragraph elements and to fix this **issue** I changed them to span elements.
+
+### **CSS Validation**
+
+* To test my CSS code I used [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) with no errors returned.
+
+### **Contrast Validation**
+
+* To make sure I had no contrast issues with my colors as I picked myself without using a palletee I used ["a11y Color Contrast Accessibility Validator"](https://color.a11y.com/).
+
+### **Performance**
+
+* Lighthourse performance
+  * During development, I used the Lighthouse now and then to make sure my website performance score stays as high up as possible.
+
+#### ***Desktop Lighthouse scores***
+
+![Desktop Lighthouse score](docs/screenshots/desktop_performace.jpg)
+
+#### ***Mobile Phones Lighthouse scores***
+
+* Due to variation from the desktop performance I had to make a second set screenshot for mobile device performance.
+
+![Mobile Lighthouse score](docs/screenshots/mobile_performace.jpg)
+
+## **Credits**
+
+* Thanks to the people that helped me when I got stuck during the development of the project:
+  * [Dick Vlaanderen](https://github.com/dickvla) - my assigned mentor by code institute who has helped me fix a bug with the game running in the background. Thank you, Sir!
+  * My friend Robert who has listened to all my newbie questions and helped me understand better Javascript. Thank you!
+
+### **General reference:**
+
+* Besides the course's material I also used W3schools, MDN web docs, Stack Overflow, and Youtube for general or a more in-depth reference.
+
+### **Content and Media**
+
+* The content and structure of the game's page was written by myself.
+* Font linked from [Google Fonts](https://fonts.google.com/).
+* The tooltip picture was taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
+  * [Rock, Paper, Scissors, Lizard, Spock](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg/768px-Pierre_ciseaux_feuille_l%C3%A9zard_spock.svg.png)
